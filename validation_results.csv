@@ -1,0 +1,28 @@
+check,result,detail
+Quote IDs unique,PASS,
+Policy IDs unique,PASS,
+Every bound quote has exactly one policy,PASS,"bound=14,046, policies=14,046"
+No orphan claims,PASS,orphans=0
+No missing values,PASS,
+No claim exceeds Coverage A,PASS,
+Loss dates fall within the 12-month term,PASS,
+Premiums and losses are positive,PASS,
+State scorecard: same row count,PASS,8 rows
+State scorecard: quotes matches pandas,PASS,max abs diff=0.000000
+State scorecard: binds matches pandas,PASS,max abs diff=0.000000
+State scorecard: quote_to_bind matches pandas,PASS,max abs diff=0.000000
+State scorecard: policies matches pandas,PASS,max abs diff=0.000000
+State scorecard: written_premium matches pandas,PASS,max abs diff=0.000000
+State scorecard: retention_rate matches pandas,PASS,max abs diff=0.000000
+State scorecard: claims matches pandas,PASS,max abs diff=0.000000
+State scorecard: incurred_loss matches pandas,PASS,max abs diff=0.000000
+State scorecard: loss_ratio matches pandas,PASS,max abs diff=0.000000
+Roof/coastal segments: same row count,PASS,10 rows
+Roof/coastal segments: policies matches pandas,PASS,max abs diff=0.000000
+Roof/coastal segments: written_premium matches pandas,PASS,max abs diff=0.000000
+Roof/coastal segments: incurred_loss matches pandas,PASS,max abs diff=0.000000
+Roof/coastal segments: loss_ratio matches pandas,PASS,max abs diff=0.000000
+Segment premium ties to total book,PASS,
+Segment losses tie to total claims,PASS,
+Channel binds tie to total binds,PASS,
+Roof bands returned in logical (not text) order,PASS,
